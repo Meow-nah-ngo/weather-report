@@ -1,11 +1,8 @@
-
-import javax.swing.SwingUtilities;
-
+import javax.swing.*;
 public class AppLauncher {
     public static void main(String[] args) {
-        // Create and show the GUI
-        SwingUtilities.invokeLater(() -> {
-            new WeatherReport().setVisible(true);
-        });
+        
+        // ใช้ Lambda expression แทน Anonymous inner class
+        SwingUtilities.invokeLater(() -> new WeatherReport().setVisible(true));
     }
 }

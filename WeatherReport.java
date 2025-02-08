@@ -1,3 +1,4 @@
+import java.awt.Font;
 import javax.swing.*;
 
 public class WeatherReport extends JFrame {
@@ -19,5 +20,20 @@ public class WeatherReport extends JFrame {
 
         // Prevent any resize GUI
         setResizable(false);
+
+        addGUIcomponents();
+
     }
+    private void addGUIcomponents(){
+
+        //search field
+        JTextField searchJTextField = new JTextField();
+
+        //set the location and set our component
+        searchJTextField.setBounds(15,15,351,45);
+        
+        //change the font style and size
+        searchJTextField.setFont(new Font("Dialog",Font.PLAIN,24));
+    }
+    
 }
