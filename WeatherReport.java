@@ -31,9 +31,14 @@ public class WeatherReport extends JFrame {
 
         //set the location and set our component
         searchJTextField.setBounds(15,15,351,45);
-        
+
         //change the font style and size
         searchJTextField.setFont(new Font("Dialog",Font.PLAIN,24));
+
+        add(searchJTextField);
+
+        //search button
+        JButton searchButton = new JButton(loadImage("src"));
     }
     
 }
